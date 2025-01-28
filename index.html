@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1><span style="color: white;">Container</span> and Flexbox</h1>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d9534f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: yellow;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 10px;
+            justify-content: space-around;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #292b2c;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 1em;
+            color: #d1d1d1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a style="color: black; font-size: 35px; text-decoration: none;" href="#">Logo</a>
+        <a href="#">Justify-content: space-between</a>
+        <a href="#">Justify-content: space-around</a>
+        <a href="#">Justify-content: space-evenly</a>
+    </div>
+
+    <div class="grid-container">
+        <div class="card">
+            <img src="https://blog.pixelfreestudio.com/wp-content/uploads/2024/07/1_OLorod4d77ZQwOhWTs7Jdw-1024x596.jpg" alt="Flexbox">
+            <h3>FlexBox</h3>
+            <p>Flexbox helps in efficiently aligning container elements by offering multiple layout techniques.</p>
+        </div>
+        <div class="card">
+            <img src="https://blog.pixelfreestudio.com/wp-content/uploads/2024/07/1_OLorod4d77ZQwOhWTs7Jdw-1024x596.jpg" alt="Container">
+            <h3>Container</h3>
+            <p>CSS containers are versatile for building layouts with specific colors, padding, and grid layouts.</p>
+        </div>
+        <div class="card">
+            <img src="https://blog.pixelfreestudio.com/wp-content/uploads/2024/07/1_OLorod4d77ZQwOhWTs7Jdw-1024x596.jpg" alt="Space-Evenly">
+            <h3>Space-Evenly</h3>
+            <p>Space-evenly distributes elements evenly within the container, leaving equal gaps on both sides.</p>
+        </div>
+        <div class="card">
+            <img src="https://blog.pixelfreestudio.com/wp-content/uploads/2024/07/1_OLorod4d77ZQwOhWTs7Jdw-1024x596.jpg" alt="Space-Between">
+            <h3>Space-Between</h3>
+            <p>Space-between positions the first and last elements at the edges, distributing remaining space evenly.</p>
+        </div>
+        <div class="card">
+            <img src="https://blog.pixelfreestudio.com/wp-content/uploads/2024/07/1_OLorod4d77ZQwOhWTs7Jdw-1024x596.jpg" alt="Align-Items">
+            <h3>Align-Items</h3>
+            <p>Align-items allows the vertical alignment of items within the flex container on the cross-axis.</p>
+        </div>
+        <div class="card">
+            <img src="https://blog.pixelfreestudio.com/wp-content/uploads/2024/07/1_OLorod4d77ZQwOhWTs7Jdw-1024x596.jpg" alt="Flexbox-Advanced">
+            <h3>FlexBox Advanced</h3>
+            <p>Flexbox can be divided into several techniques for better layout structure and dynamic alignment.</p>
+        </div>
+    </div>
+</body>
+</html>
